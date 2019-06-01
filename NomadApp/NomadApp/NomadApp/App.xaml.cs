@@ -7,13 +7,16 @@
 
     public partial class App : Application
     {
+        #region Constructores
         public App()
         {
             InitializeComponent();
 
-            MainPage = new PrincipalPage(); //La app arranca por la PrincipalPage
+            MainPage = new NavigationPage(new LoginNomadaPage2()); //La app arranca por la PrincipalPage
         }
+        #endregion
 
+        #region MyRegion
         protected override void OnStart()
         {
             // Handle when your app starts
@@ -28,5 +31,7 @@
         {
             // Handle when your app resumes
         }
+        #endregion
+
     }
 }

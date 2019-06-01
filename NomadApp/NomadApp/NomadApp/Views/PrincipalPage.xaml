@@ -3,9 +3,52 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NomadApp.Views.PrincipalPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text=""
-                 />
+        <StackLayout
+            Padding="10,20,10,20">
+            <Image
+                Source="Logo_Nomada"
+                WidthRequest="200">
+                
+            </Image>
+
+            <StackLayout>
+                <Label 
+                FontAttributes="Bold"
+                FontSize="Large"
+                HorizontalOptions="CenterAndExpand"
+                Margin="100"
+                Text="¿QUÉ ERES?"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Grid
+                    Margin="0,20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button
+                    BackgroundColor="BlueViolet" 
+                    BorderWidth="4"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                        HorizontalOptions="FillAndExpand"
+                    Text="Anfitrión"
+                    TextColor="White">
+                    </Button>
+                    
+                    <Button
+                    BackgroundColor="#22A890" 
+                    BorderWidth="4"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Text="Nómada"
+                    TextColor="White">
+                    </Button>
+                </Grid>
+            </StackLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

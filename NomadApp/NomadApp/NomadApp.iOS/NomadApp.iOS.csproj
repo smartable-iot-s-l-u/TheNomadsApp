@@ -134,4 +134,19 @@
       <Name>NomadApp</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Logo_Nomada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\alta_gratis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\facebook_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\twitter_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\instagram_logo.png" />
+  </ItemGroup>
 </Project>
