@@ -1,23 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="NomadApp.Views.PrincipalPage">
+             x:Class="NomadApp.Views.PrincipalPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
     <ContentPage.Content>
-        <StackLayout
+        <ScrollView
+            BindingContext="{Binding Principal}">
+            <StackLayout
             Padding="10,20,10,20">
             <Image
-                Source="Logo_Nomada"
+                Source="tienda_campana2"
                 WidthRequest="200">
                 
             </Image>
 
             <StackLayout>
                 <Label 
-                FontAttributes="Bold"
-                FontSize="Large"
+                FontSize="Small"
+                HorizontalOptions="CenterAndExpand"
+                Margin="30"
+                Text="Bienvenid@"
+                TextColor="#3e4241"/>
+                
+                <Label 
+                FontSize="Small"
+                HorizontalOptions="CenterAndExpand"
+                Margin="30"
+                Text="Antes de empezar a usar la app"
+                TextColor="#3e4241"/>
+                
+                <Label 
+                FontSize="Small"
                 HorizontalOptions="CenterAndExpand"
                 Margin="100"
-                Text="¿QUÉ ERES?"/>
+                Text="¿Qué perfil tienes?"
+                TextColor="#3e4241"/>
+                
             </StackLayout>
 
             <StackLayout>
@@ -29,13 +47,14 @@
                     </Grid.ColumnDefinitions>
 
                     <Button
-                    BackgroundColor="BlueViolet" 
+                    BackgroundColor="#00b7cf" 
                     BorderWidth="4"
                     Grid.Row="0"
                     Grid.Column="0"
-                        HorizontalOptions="FillAndExpand"
-                    Text="Anfitrión"
-                    TextColor="White">
+                    HorizontalOptions="FillAndExpand"
+                    x:Name="btnafitrion"
+                    Text="Anfitrion"
+                    TextColor="Gray">
                     </Button>
                     
                     <Button
@@ -43,12 +62,43 @@
                     BorderWidth="4"
                     Grid.Row="0"
                     Grid.Column="1"
-                    Text="Nómada"
-                    TextColor="White">
+                    x:Name="btnparticular"
+                    Text="Particular"
+                    TextColor="#3e4241">
                     </Button>
                 </Grid>
             </StackLayout>
-            
-        </StackLayout>
+                <StackLayout>
+                    <Grid
+                    Margin="0,20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                    <Label
+                    FontSize="Micro"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    HorizontalOptions="FillAndExpand"                   
+                    Text="Restaurantes, cefeterías,
+                        hoteles y coworkings"
+                    TextColor="#3e4241">
+                    </Label>
+
+                    <Label
+                    FontSize="Micro"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    HorizontalOptions="FillAndExpand" 
+                    Text="Cualquier persona que 
+                        necesite un espacio"
+                    TextColor="#3e4241">
+                        </Label>
+                    </Grid>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

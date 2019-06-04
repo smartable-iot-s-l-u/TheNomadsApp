@@ -7,16 +7,16 @@
 
     public partial class App : Application
     {
-        #region Constructores
+        #region Constructors
         public App()
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new LoginNomadaPage2()); //La app arranca por la PrincipalPage
+            MainPage = new NavigationPage(new PrincipalPage()); //La app arranca por la PrincipalPage
         }
         #endregion
 
-        #region MyRegion
+        #region Methods
         protected override void OnStart()
         {
             // Handle when your app starts
