@@ -2,56 +2,121 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NomadApp.Views.LoginNomada2Page"
-             Title="Login">
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
     <ContentPage.Content>
         <ScrollView
             BindingContext="{Binding LoginNomada2}">
             <StackLayout
             Padding="10,20,10,5">
+                <Image
+                Source="tienda_campana"
+                    WidthRequest="170">
+                </Image>
+
                 <Label
                 FontAttributes="Bold"
                 FontSize="Large"
                 HorizontalOptions="Center" 
-                Text="NomadasApp">
+                HorizontalTextAlignment="Start"
+                Text="Crea tu perfil"
+                TextColor="#3e4241">
                 </Label>
 
-                <Image
-                Source="Logo_Nomada">
-                </Image>
-                <Grid
-                Margin="0,20">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
+                <Label
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalOptions="Center" 
+                HorizontalTextAlignment="Center"
+                Text="Regístrate de forma sencilla y reserva
+                    tu lugar de trabajo/estudio"
+                TextColor="#3e4241">
+                </Label>
+
+                <StackLayout
+                HorizontalOptions="Center"              
+                Orientation="Horizontal">
+                    <ImageButton    
+                    Margin="45,38"
+                    Source="signingoogle"
+                    WidthRequest="240">
+                    </ImageButton>
+                </StackLayout>
+
+                <StackLayout>
                     <Label
-                    Grid.Row="0"
-                    Grid.Column="0"
-                    Text="Email">
-                    </Label>
+                        HorizontalOptions="Center"
+                        Text="----------------------------- o ------------------------------"
+                        TextColor="#3e4241"></Label>
+                </StackLayout>
+
+                <StackLayout
+                Margin="45,20">
+                    
+                   
                     <Entry
-                    Grid.Row="0"
-                    Grid.Column="1"
+                    
                     Keyboard="Email"
                     Text="{Binding Email, Mode=TwoWay}"
-                    Placeholder="Entra tu email"
+                    Placeholder="Tu email "
                     PlaceholderColor="Gray">
                     </Entry>
-
+                    
+                    <!--
+                    
                     <Label
                     Grid.Row="1"
                     Grid.Column="0"
                     Text="Passwrod">
                     </Label>
+                    
+                    -->
+                    
                     <Entry
-                    Grid.Row="1"
-                    Grid.Column="1"
+                    
                     IsPassword="True"
-                    Placeholder="Entra tu password"
+                    Placeholder="Contraseña"
                     PlaceholderColor="Gray"
                     Text="{Binding Password, Mode=TwoWay}">
                     </Entry>
-                </Grid>
+                </StackLayout>
+
+                <StackLayout
+                Margin="40,0">
+                    <Button
+                    BackgroundColor="#a4c900"
+                    Command="{Binding LoginCommand}"
+                    HeightRequest="46"
+                    IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                    Text="Crear perfil"
+                    TextColor="White">
+                    </Button>
+                    <!--
+                    <Button
+                    BackgroundColor="Purple"
+                    HeightRequest="46"
+                    IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                    Text="REGISTER"
+                    TextColor="White">
+                    </Button>
+                    -->
+                </StackLayout>
+
+                <StackLayout
+                    Margin="40,0  ">
+                    <Label
+                        HorizontalOptions="Center"
+                        Text="¿Ya tienes cuenta? Inicia sesión"
+                        TextColor="#3e4241"></Label>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label
+                        HorizontalOptions="Center"
+                        Text="Powered by SMARTABLE"
+                        TextColor="#3e4241"></Label>
+                </StackLayout>
+
+                <!--
                 <StackLayout
                 Orientation="Horizontal">
                     <Label
@@ -64,28 +129,17 @@
                     IsToggled="{Binding IsRemembered, Mode=TwoWay}">
                     </Switch>
                 </StackLayout>
+                
                 <ActivityIndicator
                     IsRunning="{Binding IsRunnig, Mode=TwoWay}"
                     VerticalOptions="CenterAndExpand">
                 </ActivityIndicator>
-                <StackLayout
-                Margin="40,0">
-                    <Button
-                    BackgroundColor="Navy"
-                    Command="{Binding LoginCommand}"
-                    HeightRequest="46"
-                    IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
-                    Text="LOGIN"
-                    TextColor="White">
-                    </Button>
-                    <Button
-                    BackgroundColor="Purple"
-                    HeightRequest="46"
-                    IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
-                    Text="REGISTER"
-                    TextColor="White">
-                    </Button>
-                </StackLayout>
+                -->
+                
+                
+                
+                
+                <!--
                 <StackLayout
                 HorizontalOptions="Center"
                 Orientation="Horizontal">
@@ -102,6 +156,8 @@
                     WidthRequest="80">
                     </Image>
                 </StackLayout>
+                -->
+                
             </StackLayout>
 
         </ScrollView>

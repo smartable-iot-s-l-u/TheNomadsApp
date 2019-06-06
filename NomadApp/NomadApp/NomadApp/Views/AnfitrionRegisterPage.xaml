@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NomadApp.Views.AnfitrionRegisterPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <ContentPage.Content>
+        <ScrollView
+            BindingContext="{Binding AnfitrionRegister}">
+            <StackLayout
+            Padding="10,20,10,5">
+                <Image
+                Source="laptop"
+                    WidthRequest="170">
+                </Image>
+
+                <Label
+                FontAttributes="Bold"
+                FontSize="Large"
+                HorizontalOptions="Center" 
+                HorizontalTextAlignment="Start"
+                Text="Crea tu perfil"
+                TextColor="#3e4241">
+                </Label>
+
+                <Label
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalOptions="Center" 
+                HorizontalTextAlignment="Center"
+                Text="Registra tu establecimiento de forma
+                    gratuita en unos simples pasos"
+                TextColor="#3e4241">
+                </Label>
+
+                <StackLayout
+                Margin="45,20">
+
+                    <Entry
+                    Text="{Binding Nombre, Mode=TwoWay}"
+                    Placeholder="Nombre"
+                    PlaceholderColor="Gray">
+                    </Entry>
+
+                    <Entry
+                    Keyboard="Email"
+                    Text="{Binding Email, Mode=TwoWay}"
+                    Placeholder="Tu email "
+                    PlaceholderColor="Gray">
+                    </Entry>
+
+                    <Entry
+                    IsPassword="True"
+                    Placeholder="Contraseña"
+                    PlaceholderColor="Gray"
+                    Text="{Binding Password, Mode=TwoWay}">
+                    </Entry>
+                </StackLayout>
+
+                <StackLayout
+                Margin="40,0">
+                    <Button
+                    BackgroundColor="#a4c900"                    
+                    HeightRequest="46"
+                    IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                    x:Name="btnCrearCuentaAnfitrion"
+                    Text="Crear cuenta"
+                    TextColor="White">
+                    </Button>
+                   
+                </StackLayout>
+
+                <StackLayout
+                    Margin="40,0  ">
+                    <Label
+                        HorizontalOptions="Center"
+                        Text="¿Ya tienes cuenta? Inicia sesión"
+                        TextColor="#3e4241"></Label>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label
+                        HorizontalOptions="Center"
+                        Text="Powered by SMARTABLE"
+                        TextColor="#3e4241"></Label>
+                </StackLayout>
+
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,6 +1,7 @@
 ﻿namespace NomadApp.ViewModels
 {
     using GalaSoft.MvvmLight.Command;
+    using NomadApp.Views;
     using System.ComponentModel;
     using System.Windows.Input;
     using Xamarin.Forms;
@@ -57,7 +58,15 @@
         #endregion
 
         #region Commands
-        public ICommand LoginCommand => new RelayCommand(Login); //Le sacamos el command del Login
+        public ICommand LoginCommand //Le sacamos el command del Login
+        {
+            get
+            {
+                return new RelayCommand(Login);
+            }
+        }
+
+
 
 
         private async void Login()
@@ -80,11 +89,14 @@
                 return;
             }
 
-
+            this.IsRunning = true;
+            this.IsEnabled = false;
 
             //Quemamos la contraseña
             if (this.Email != "jordivr77@gmail.com" || this.Password != "1234")
             {
+                this.IsRunning = false;
+                this.IsEnabled = true;
                 await Application.Current.MainPage.DisplayAlert(
                     "Error",
                     "Email o Password incorrecto.",
@@ -93,11 +105,17 @@
                 return;
             }
 
-            await Application.Current.MainPage.DisplayAlert(
-                    "OK",
-                    "Maravilloso.",
-                    "Aceptar");
-            return;
+            this.IsRunning = false;
+            this.IsEnabled = true;
+
+            this.Email = string.Empty;
+            this.Password = string.Empty;
+
+            //aquí ponemos la página donde se direcciona cuando hacemos login
+            //Garantizamos que antes de PINTAR la ReservarEspacioPage,estamos estableciendo la ReservarEspacioViewModel
+            MainViewModel.GetInstance().ReservarEspacio = new ReservarEspacioViewModel();
+            await Application.Current.MainPage.Navigation.PushAsync(new ReservarEspacioPage());
+            
 
         }
         #endregion

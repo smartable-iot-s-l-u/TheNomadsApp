@@ -16,23 +16,23 @@
 
             <StackLayout>
                 <Label 
-                FontSize="Small"
+                FontSize="Large"    
                 HorizontalOptions="CenterAndExpand"
                 Margin="30"
                 Text="Bienvenid@"
                 TextColor="#3e4241"/>
                 
                 <Label 
-                FontSize="Small"
+                FontSize="Medium"
                 HorizontalOptions="CenterAndExpand"
-                Margin="30"
+                Margin="2"
                 Text="Antes de empezar a usar la app"
                 TextColor="#3e4241"/>
                 
                 <Label 
-                FontSize="Small"
-                HorizontalOptions="CenterAndExpand"
-                Margin="100"
+                FontSize="Medium"
+                HorizontalOptions="Center"
+                Margin="58"
                 Text="¿Qué perfil tienes?"
                 TextColor="#3e4241"/>
                 
@@ -70,7 +70,7 @@
             </StackLayout>
                 <StackLayout>
                     <Grid
-                    Margin="0,20">
+                    Margin="20,2">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
@@ -80,7 +80,7 @@
                     FontSize="Micro"
                     Grid.Row="0"
                     Grid.Column="0"
-                    HorizontalOptions="FillAndExpand"                   
+                    HorizontalOptions="Center"                   
                     Text="Restaurantes, cefeterías,
                         hoteles y coworkings"
                     TextColor="#3e4241">
@@ -90,7 +90,7 @@
                     FontSize="Micro"
                     Grid.Row="0"
                     Grid.Column="1"
-                    HorizontalOptions="FillAndExpand" 
+                    HorizontalOptions="Center" 
                     Text="Cualquier persona que 
                         necesite un espacio"
                     TextColor="#3e4241">

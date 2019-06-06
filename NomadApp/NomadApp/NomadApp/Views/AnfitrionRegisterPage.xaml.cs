@@ -1,4 +1,5 @@
 ﻿namespace NomadApp.Views
+
 {
     using System;
     using System.Collections.Generic;
@@ -10,18 +11,17 @@
     using Xamarin.Forms.Xaml;
 
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Particular1bPage : ContentPage
+    public partial class AnfitrionRegisterPage : ContentPage
     {
-        public Particular1bPage()
+        public AnfitrionRegisterPage()
         {
             InitializeComponent();
-            btnexplorar.Clicked += Btnexplorar_Clicked;
+            btnCrearCuentaAnfitrion.Clicked += BtnAnfitrionRegister_Clicked;
         }
 
-        
-        private void Btnexplorar_Clicked(object sender, EventArgs e)
+        private void BtnAnfitrionRegister_Clicked(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            ((NavigationPage)this.Parent).PushAsync(new LoginAnfitrionPage());
         }
     }
 }
