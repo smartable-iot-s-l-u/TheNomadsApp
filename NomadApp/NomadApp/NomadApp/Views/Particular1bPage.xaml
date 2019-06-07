@@ -30,6 +30,28 @@
                 </Button>
             </StackLayout>
 
+            <ScrollView 
+     Orientation="Horizontal"
+     HorizontalScrollBarVisibility="Default"
+     VerticalScrollBarVisibility="Never">
+                <StackLayout 
+          x:Name="Highlights"
+          Padding="20, 0, 0, 36"
+          Orientation="Horizontal"
+          BindableLayout.ItemsSource="{Binding Author.Highlights}">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <Grid
+                          x:Name="HighlightTemplate"
+                          RowSpacing="0"
+                          Style="{StaticResource HighlightStyle}">
+                                
+                            </Grid>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </StackLayout>
+            </ScrollView>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

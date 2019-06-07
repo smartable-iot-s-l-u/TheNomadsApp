@@ -21,7 +21,7 @@
         
         private void Btnexplorar_Clicked(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            ((NavigationPage)this.Parent).PushAsync(new LoginNomada2Page());
         }
     }
 }

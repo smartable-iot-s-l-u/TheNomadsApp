@@ -15,6 +15,12 @@ namespace NomadApp.Views
         public Anfitrion1aPage()
         {
             InitializeComponent();
+            btncomenzar.Clicked += Btncomenzar_Clicked;
+        }
+
+        private void Btncomenzar_Clicked(object sender, EventArgs e)
+        {
+            ((NavigationPage)this.Parent).PushAsync(new AnfitrionRegisterPage());
         }
     }
 }

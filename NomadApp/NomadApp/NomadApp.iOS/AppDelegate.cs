@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Foundation;
-using UIKit;
-
-namespace NomadApp.iOS
+﻿namespace NomadApp.iOS
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
+    using Foundation;
+    using UIKit;
+
     [Register("AppDelegate")]
     public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
     {
@@ -15,6 +15,9 @@ namespace NomadApp.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
+
+            //Puesto nuevo
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
 
             return base.FinishedLaunching(app, options);
         }

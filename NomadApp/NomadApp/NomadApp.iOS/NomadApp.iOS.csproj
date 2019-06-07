@@ -176,4 +176,28 @@
   <ItemGroup>
     <BundleResource Include="Resources\LOGO.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\slider_nomada1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\slider_nomada2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\slider_nomada3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\slider_anfitrion1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\slider_anfitrion2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\slider_anfitrion3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\slider_anfitrion4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\slider_nomada4.jpg" />
+  </ItemGroup>
 </Project>

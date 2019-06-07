@@ -41,11 +41,25 @@
         }
         #endregion
 
+        public CrearCuentaAnfitrionViewModel CrearCuentaAnfitrion
+        {
+            get;
+            set;
+        }
+
         #region Constructors
         public MainViewModel()
         {
             instance = this;
             this.Principal = new PrincipalViewModel();
+            this.Anfitrion1A = new Anfitrion1aViewModel();
+            this.Particular1B = new Particular1bViewModel();
+            this.AnfitrionRegister = new AnfitrionRegisterViewModel();
+            this.LoginNomada2 = new LoginNomada2ViewModel();
+            this.ReservarEspacio = new ReservarEspacioViewModel();
+            this.CrearCuentaAnfitrion = new CrearCuentaAnfitrionViewModel();
+            
+            
         }
         #endregion
 

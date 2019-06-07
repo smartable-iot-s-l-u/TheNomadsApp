@@ -62,7 +62,7 @@
                     BackgroundColor="#a4c900"                    
                     HeightRequest="46"
                     IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
-                    x:Name="btnCrearCuentaAnfitrion"
+                    Command="{Binding AnfitrionCommand}"
                     Text="Crear cuenta"
                     TextColor="White">
                     </Button>

@@ -12,7 +12,7 @@
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new LoginNomada2Page()); //La app arranca por la PrincipalPage
+            MainPage = new NavigationPage(new PrincipalPage()); //La app arranca por la PrincipalPage
         }
         #endregion
 

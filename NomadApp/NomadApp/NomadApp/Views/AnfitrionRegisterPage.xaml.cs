@@ -16,12 +16,9 @@
         public AnfitrionRegisterPage()
         {
             InitializeComponent();
-            btnCrearCuentaAnfitrion.Clicked += BtnAnfitrionRegister_Clicked;
+            
         }
 
-        private void BtnAnfitrionRegister_Clicked(object sender, EventArgs e)
-        {
-            ((NavigationPage)this.Parent).PushAsync(new LoginAnfitrionPage());
-        }
+        
     }
 }

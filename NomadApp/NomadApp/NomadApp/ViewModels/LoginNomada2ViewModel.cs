@@ -93,7 +93,7 @@
             this.IsEnabled = false;
 
             //Quemamos la contraseña
-            if (this.Email != "jordivr77@gmail.com" || this.Password != "1234")
+            if (this.Email != "123@gmail.com" || this.Password != "123")
             {
                 this.IsRunning = false;
                 this.IsEnabled = true;

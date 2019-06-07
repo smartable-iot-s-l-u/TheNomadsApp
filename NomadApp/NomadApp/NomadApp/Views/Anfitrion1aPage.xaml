@@ -1,12 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="NomadApp.Views.Anfitrion1aPage">
-    <ContentPage.Content>
+             xmlns:viewModels="clr-namespace:NomadApp.ViewModels"
+             xmlns:cards="clr-namespace:PanCardView;assembly=PanCardView"
+             xmlns:ffimage="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:controls="clr-namespace:PanCardView.Controls;assembly=PanCardView"
+             x:Class="NomadApp.Views.Anfitrion1aPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <ContentPage.BindingContext>
+        <viewModels:Anfitrion1aViewModel/>
+    </ContentPage.BindingContext>
+
+    <cards:CarouselView 
+        BindingContext="{Binding Anfitrion1a}"
+        ItemsSource="{Binding ImageNodeInfo}"
+        SlideShowDuration="3500"
+        SelectedIndex="{Binding CurrentIndex}">
+        <cards:CarouselView.ItemTemplate>
+            <DataTemplate>
+                <ContentView>
+                    <Frame 
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        HeightRequest="300"
+                        WidthRequest="300"
+                        Padding="0" 
+                        HasShadow="false"
+                        IsClippedToBounds="true"
+                        CornerRadius="10"
+                        BackgroundColor="{Binding Color}">
+
+                        <ffimage:CachedImage Source="{Binding Source}"/>
+
+                    </Frame>
+                </ContentView>
+            </DataTemplate>
+        </cards:CarouselView.ItemTemplate>
+
+        <controls:IndicatorsControl ToFadeDuration="1500"/>
+        <controls:LeftArrowControl ToFadeDuration="2500"/>
+        <controls:RightArrowControl ToFadeDuration="2500"/>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="AQUÍ IRÍAN LAS 4 FOTOS DE ESPACIO Y DEMÁS"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>
-    </ContentPage.Content>
+       
+        <Button
+                    BackgroundColor="#00b7cf" 
+                    BorderWidth="4"
+                    x:Name="btncomenzar"
+                    Text="Comenzar"
+                    TextColor="#3e4241">
+        </Button>
+    </cards:CarouselView>
+    
+
 </ContentPage>

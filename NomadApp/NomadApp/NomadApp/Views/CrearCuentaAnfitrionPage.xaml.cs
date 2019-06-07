@@ -10,13 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace NomadApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ReservarEspacioPage : ContentPage
+    public partial class CrearCuentaAnfitrionPage : ContentPage
     {
-        public ReservarEspacioPage()
+        public CrearCuentaAnfitrionPage()
         {
             InitializeComponent();
-            
-
         }
     }
 }

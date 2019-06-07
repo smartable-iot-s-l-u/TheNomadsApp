@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using System.Text;
 
-    public class Particular1bViewModel : BaseViewModel
+    public class CrearCuentaAnfitrionViewModel : BaseViewModel
     {
 
     }

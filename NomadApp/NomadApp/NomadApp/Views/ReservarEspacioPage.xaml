@@ -1,12 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="NomadApp.Views.ReservarEspacioPage">
+             x:Class="NomadApp.Views.ReservarEspacioPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="RESERVA TU ESPACIO!"
+        <ScrollView
+            BindingContext="{Binding ReservarEspacio}">
+            <StackLayout>
+                <SearchBar 
+                    x:Name="CountriesSearchBar"  
+                    
+                    BackgroundColor="#FBCBF3"/>
+
+                <ListView 
+                    x:Name="CountrySearchList"
+                    BackgroundColor="#D6F5FE"
+                    Footer=""/>
+                
+                <Label Text="RESERVA TU ESPACIO!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+            </StackLayout>
+        </ScrollView>
+        
     </ContentPage.Content>
 </ContentPage>
