@@ -10,7 +10,7 @@
             Padding="10,20,10,20">
             <Image
                 Source="tienda_campana2"
-                WidthRequest="200">
+                WidthRequest="180">
                 
             </Image>
 
@@ -49,6 +49,7 @@
                     <Button
                     BackgroundColor="#00b7cf" 
                     BorderWidth="4"
+                    CornerRadius="2"
                     Grid.Row="0"
                     Grid.Column="0"
                     HorizontalOptions="FillAndExpand"
@@ -60,6 +61,7 @@
                     <Button
                     BackgroundColor="#22A890" 
                     BorderWidth="4"
+                    CornerRadius="2"
                     Grid.Row="0"
                     Grid.Column="1"
                     x:Name="btnparticular"
