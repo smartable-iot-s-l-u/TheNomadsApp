@@ -85,6 +85,7 @@
                     <Button
                     BackgroundColor="#a4c900"
                     Command="{Binding LoginCommand}"
+                    CornerRadius="23"
                     HeightRequest="46"
                     IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
                     Text="Crear perfil"

@@ -16,21 +16,21 @@
 
             <StackLayout>
                 <Label 
-                FontSize="Large"    
+                FontSize="45"    
                 HorizontalOptions="CenterAndExpand"
                 Margin="30"
                 Text="Bienvenid@"
                 TextColor="#3e4241"/>
                 
                 <Label 
-                FontSize="Medium"
+                FontSize="20"
                 HorizontalOptions="CenterAndExpand"
                 Margin="2"
                 Text="Antes de empezar a usar la app"
                 TextColor="#3e4241"/>
                 
                 <Label 
-                FontSize="Medium"
+                FontSize="15"
                 HorizontalOptions="Center"
                 Margin="58"
                 Text="¿Qué perfil tienes?"
@@ -48,20 +48,20 @@
 
                     <Button
                     BackgroundColor="#00b7cf" 
-                    BorderWidth="4"
-                    CornerRadius="2"
+                    BorderWidth="43"
+                    CornerRadius="23"
                     Grid.Row="0"
                     Grid.Column="0"
                     HorizontalOptions="FillAndExpand"
                     x:Name="btnafitrion"
                     Text="Anfitrion"
-                    TextColor="Gray">
+                    TextColor="#3e4241">
                     </Button>
                     
                     <Button
-                    BackgroundColor="#22A890" 
-                    BorderWidth="4"
-                    CornerRadius="2"
+                    BackgroundColor="#a4c900" 
+                    BorderWidth="43"
+                    CornerRadius="23"
                     Grid.Row="0"
                     Grid.Column="1"
                     x:Name="btnparticular"
@@ -92,7 +92,8 @@
                     FontSize="Micro"
                     Grid.Row="0"
                     Grid.Column="1"
-                    HorizontalOptions="Center" 
+                    HorizontalOptions="CenterAndExpand" 
+                    Margin="20,2"
                     Text="Cualquier persona que 
                         necesite un espacio"
                     TextColor="#3e4241">

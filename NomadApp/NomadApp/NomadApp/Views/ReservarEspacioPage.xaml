@@ -7,20 +7,285 @@
         <ScrollView
             BindingContext="{Binding ReservarEspacio}">
             <StackLayout>
-                <SearchBar 
-                    x:Name="CountriesSearchBar"  
-                    
-                    BackgroundColor="#FBCBF3"/>
-
-                <ListView 
-                    x:Name="CountrySearchList"
-                    BackgroundColor="#D6F5FE"
-                    Footer=""/>
+                <SearchBar
+                    Margin="20,20"
+                    x:Name="ProductsSearchBar"     
+                    BackgroundColor="White"
+                    Placeholder="Prueba con Cehegín"/>
                 
-                <Label Text="RESERVA TU ESPACIO!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+                <StackLayout
+                    Margin="20,20"
+                    HorizontalOptions="Start"
+                    Orientation="Horizontal">
+                    <Button
+                        BackgroundColor="#faf4ab"
+                        FontSize="9"
+                        Text="Fecha"
+                        TextColor="#a4c900">
+                    </Button>
+
+                    <Button
+                        BackgroundColor="#faf4ab"
+                        FontSize="9"
+                        Text="Hora"
+                        TextColor="#a4c900">
+                    </Button>
+
+                    <Button
+                        BackgroundColor="#faf4ab"
+                        FontSize="9"
+                        Text="Personas"
+                        TextColor="#a4c900">
+                    </Button>
+                    
+                </StackLayout>
+
+                <StackLayout
+                    HorizontalOptions="StartAndExpand"
+                    Orientation="Horizontal">
+                    <Label
+                        FontSize="20"
+                        Text="Espacios cerca de ti"
+                        TextColor="#3e4241">
+                    </Label>
+                    
+                </StackLayout>
+
+                <StackLayout>
+                    <Grid
+                    Margin="20,2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="20"/>
+                            <RowDefinition Height="5"/>
+                            <RowDefinition Height="5"/>
+                            <RowDefinition Height="5"/>
+                            <RowDefinition Height="5"/>
+                            <RowDefinition Height="20"/>
+                            <RowDefinition Height="5"/>
+                            <RowDefinition Height="5"/>
+                            <RowDefinition Height="5"/>
+                            <RowDefinition Height="5"/>
+                        </Grid.RowDefinitions>
+
+                        <Image
+                            Grid.Column="0"
+                            Grid.Row="0"                           
+                            Source=""
+                            WidthRequest="15">
+                        </Image>
+                        <Label
+                            FontSize="Medium"
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            HorizontalOptions="Start"
+                            Margin="20,2"
+                            Text="BAR - ALICANTE"
+                            TextColor="#a4c900">
+                        </Label>
+                        <Label
+                            FontSize="Micro"
+                            Grid.Column="0"
+                            Grid.Row="2"
+                            HorizontalOptions="Start" 
+                            Margin="20,2"
+                            Text="Mesa reunión para 4 pers."
+                            TextColor="#3e4241">
+                        </Label>
+                        <Label
+                            FontSize="Micro"
+                            Grid.Column="0"
+                            Grid.Row="3"
+                            HorizontalOptions="Start" 
+                            Margin="20,2"
+                            Text="Sitio maravilloso"
+                            TextColor="#3e4241">
+                        </Label>
+                        <Label
+                            FontSize="Micro"
+                            Grid.Column="0"
+                            Grid.Row="4"
+                            HorizontalOptions="Start" 
+                            Margin="20,2"
+                            Text="Desde 5 euros"
+                            TextColor="#3e4241">
+                        </Label>
+
+
+                        <Image
+                            Grid.Column="1"
+                            Grid.Row="0"                           
+                            Source=""
+                            WidthRequest="15">
+                        </Image>
+                        <Label
+                            FontSize="Medium"
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            HorizontalOptions="Start" 
+                            Margin="20,2"
+                            Text="RESTAURANTE - ALICANTE"
+                            TextColor="#00b7cf">
+                        </Label>
+                        <Label
+                            FontSize="Micro"
+                            Grid.Column="1"
+                            Grid.Row="2"
+                            HorizontalOptions="Start" 
+                            Margin="20,2"
+                            Text="Mesa reunión para 4 pers."
+                            TextColor="#3e4241">
+                        </Label>
+                        <Label
+                            FontSize="Micro"
+                            Grid.Column="1"
+                            Grid.Row="3"
+                            HorizontalOptions="Start" 
+                            Margin="20,2"
+                            Text="Lo más pijo de Alicante"
+                            TextColor="#3e4241">
+                        </Label>
+                        <Label
+                            FontSize="Micro"
+                            Grid.Column="1"
+                            Grid.Row="4"
+                            HorizontalOptions="Start" 
+                            Margin="20,2"
+                            Text="Desde 5 euros"
+                            TextColor="#3e4241">
+                        </Label>
+
+
+                        <Image
+                            Grid.Column="0"
+                            Grid.Row="5"                           
+                            Source=""
+                            WidthRequest="15">
+                        </Image>
+                        <Label
+                            FontSize="Medium"
+                            Grid.Column="0"
+                            Grid.Row="6"
+                            HorizontalOptions="Start" 
+                            Margin="20,2"
+                            Text="RESTAURANTE - ALICANTE"
+                            TextColor="#00b7cf">
+                        </Label>
+                        <Label
+                            FontSize="Micro"
+                            Grid.Column="0"
+                            Grid.Row="7"
+                            HorizontalOptions="Start" 
+                            Margin="20,2"
+                            Text="Mesa reunión para 3 pers."
+                            TextColor="#3e4241">
+                        </Label>
+                        <Label
+                            FontSize="Micro"
+                            Grid.Column="0"
+                            Grid.Row="8"
+                            HorizontalOptions="Start" 
+                            Margin="20,2"
+                            Text="Terraza al aire libre"
+                            TextColor="#3e4241">
+                        </Label>
+                        <Label
+                            FontSize="Micro"
+                            Grid.Column="0"
+                            Grid.Row="9"
+                            HorizontalOptions="Start" 
+                            Margin="20,2"
+                            Text="Desde 5 euros"
+                            TextColor="#3e4241">
+                        </Label>
+
+                        <Image
+                            Grid.Column="1"
+                            Grid.Row="5"                           
+                            Source=""
+                            WidthRequest="15">
+                        </Image>
+                        <Label
+                            FontSize="Medium"
+                            Grid.Column="1"
+                            Grid.Row="6"
+                            HorizontalOptions="Start"  
+                            Margin="20,2"
+                            Text="BAR - ALICANTE"
+                            TextColor="#a4c900">
+                        </Label>
+                        <Label
+                            FontSize="Micro"
+                            Grid.Column="1"
+                            Grid.Row="7"
+                            HorizontalOptions="Start" 
+                            Margin="20,2"
+                            Text="Mesa reunión para 5 pers."
+                            TextColor="#3e4241">
+                        </Label>
+                        <Label
+                            FontSize="Micro"
+                            Grid.Column="1"
+                            Grid.Row="8"
+                            HorizontalOptions="Start" 
+                            Margin="20,2"
+                            Text="Ambiente tranquilo"
+                            TextColor="#3e4241">
+                        </Label>
+                        <Label
+                            FontSize="Micro"
+                            Grid.Column="1"
+                            Grid.Row="9"
+                            HorizontalOptions="Start" 
+                            Margin="20,2"
+                            Text="Desde 5 euros"
+                            TextColor="#3e4241">
+                        </Label>
+
+
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout
+                    HorizontalOptions="Center"
+                    Orientation="Horizontal">
+                    <Button
+                        BackgroundColor="#00b7cf"
+                        x:Name="btnMostrarMas"
+                        CornerRadius="23"
+                        HeightRequest="46"
+                        Margin="40,5"
+                        Text="Mostrar más"
+                        TextColor="#3e4241">
+                        
+                    </Button>
+                    
+                </StackLayout>
+
+                <StackLayout
+                    Orientation="Horizontal">
+                    <Label
+                        FontSize="20"
+                        HorizontalOptions="StartAndExpand"
+                        Text="EXPERIENCIAS"
+                        TextColor="#3e4241">
+                    </Label>
+                    <Label
+                        FontSize="18"
+                        HorizontalOptions="EndAndExpand"
+                        Text="Ver Todas"
+                        TextColor="#3e4241">
+                    </Label>
+
+                </StackLayout>
+                
             </StackLayout>
+            
+            
         </ScrollView>
         
     </ContentPage.Content>

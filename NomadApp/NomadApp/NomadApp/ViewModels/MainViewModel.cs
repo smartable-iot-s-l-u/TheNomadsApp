@@ -47,6 +47,8 @@
             set;
         }
 
+        public MostrarMasEspaciosViewModel MostrarMasEspacios { get; set; }
+
         #region Constructors
         public MainViewModel()
         {
@@ -58,6 +60,7 @@
             this.LoginNomada2 = new LoginNomada2ViewModel();
             this.ReservarEspacio = new ReservarEspacioViewModel();
             this.CrearCuentaAnfitrion = new CrearCuentaAnfitrionViewModel();
+            this.MostrarMasEspacios = new MostrarMasEspaciosViewModel();
             
             
         }

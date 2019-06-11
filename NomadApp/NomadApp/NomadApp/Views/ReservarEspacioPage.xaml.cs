@@ -15,8 +15,13 @@ namespace NomadApp.Views
         public ReservarEspacioPage()
         {
             InitializeComponent();
-            
+            btnMostrarMas.Clicked += BtnMostrarMas_Clicked;       
 
+        }
+
+        private void BtnMostrarMas_Clicked(object sender, EventArgs e)
+        {
+            ((NavigationPage)this.Parent).PushAsync(new MostrarMasEspaciosPage());
         }
     }
 }

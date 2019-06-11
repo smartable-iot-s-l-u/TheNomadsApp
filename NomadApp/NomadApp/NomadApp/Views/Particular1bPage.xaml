@@ -14,15 +14,18 @@
             <StackLayout>
                 <Label
                     FontAttributes="Bold"
-                    FontSize="Medium"
+                    FontSize="15"
                     HorizontalOptions="CenterAndExpand"
                     Margin="100"
                     Text="¿POR QUÉ USAR?"/>
             </StackLayout>
 
-            <StackLayout>
+            <StackLayout
+                Margin="50,0">
                 <Button
                     BackgroundColor="#a4c900"
+                    BorderWidth="43"
+                    CornerRadius="23"
                     HorizontalOptions="FillAndExpand"
                     x:Name="btnexplorar"
                     Text="Explorar"
