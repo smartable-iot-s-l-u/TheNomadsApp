@@ -1,60 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="NomadApp.Views.Particular1bPage">
-    <ContentPage.Content>
-        <StackLayout
-            Padding="10,20,10,20">
+             xmlns:local="clr-namespace:NomadsApp"
+             xmlns:ViewModels="clr-namespace:NomadsApp.ViewModels"
+             xmlns:controls="clr-namespace:PanCardView.Controls;assembly=PanCardView"
+             xmlns:cards="clr-namespace:PanCardView;assembly=PanCardView"
+             xmlns:ffimage="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             x:Class="NomadApp.Views.Particular1bPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
 
-            <Image
-                Source="alta_gratis"
-                WidthRequest="200">
-            </Image>
 
-            <StackLayout>
-                <Label
-                    FontAttributes="Bold"
-                    FontSize="15"
-                    HorizontalOptions="CenterAndExpand"
-                    Margin="100"
-                    Text="¿POR QUÉ USAR?"/>
+    <StackLayout>
+        <ScrollView 
+            BindingContext="{Binding Particular1b}"
+            Orientation="Horizontal"
+            HorizontalScrollBarVisibility="Default"
+            VerticalScrollBarVisibility="Never">
+            <StackLayout  Orientation="Horizontal">
+                <Image 
+                    Source="SliderParticular1">
+                </Image>
+                <Image 
+                    Source="SliderParticular2">
+                </Image>
+                <Image 
+                    Source="SliderParticular3">
+                </Image>
+                <Image 
+                    Source="SliderParticular4">
+                </Image>
             </StackLayout>
+        </ScrollView>
 
-            <StackLayout
-                Margin="50,0">
-                <Button
-                    BackgroundColor="#a4c900"
-                    BorderWidth="43"
-                    CornerRadius="23"
-                    HorizontalOptions="FillAndExpand"
-                    x:Name="btnexplorar"
-                    Text="Explorar"
-                    TextColor="#3e4241">
-                </Button>
-            </StackLayout>
+        <Button 
+            Text="Explorar" 
+            x:Name="btnexplorar"
+            BorderWidth="43"
+            CornerRadius="23" 
+            BackgroundColor="#a4c900" 
+            Margin="100">
+        </Button>
+    </StackLayout>
 
-            <ScrollView 
-     Orientation="Horizontal"
-     HorizontalScrollBarVisibility="Default"
-     VerticalScrollBarVisibility="Never">
-                <StackLayout 
-          x:Name="Highlights"
-          Padding="20, 0, 0, 36"
-          Orientation="Horizontal"
-          BindableLayout.ItemsSource="{Binding Author.Highlights}">
-                    <BindableLayout.ItemTemplate>
-                        <DataTemplate>
-                            <Grid
-                          x:Name="HighlightTemplate"
-                          RowSpacing="0"
-                          Style="{StaticResource HighlightStyle}">
-                                
-                            </Grid>
-                        </DataTemplate>
-                    </BindableLayout.ItemTemplate>
-                </StackLayout>
-            </ScrollView>
-
-        </StackLayout>
-    </ContentPage.Content>
 </ContentPage>

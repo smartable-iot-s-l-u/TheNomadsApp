@@ -5,8 +5,7 @@
              xmlns:cards="clr-namespace:PanCardView;assembly=PanCardView"
              xmlns:ffimage="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              xmlns:controls="clr-namespace:PanCardView.Controls;assembly=PanCardView"
-             x:Class="NomadApp.Views.Anfitrion1aPage"
-             
+             x:Class="NomadApp.Views.Anfitrion1aPage"           
              BindingContext="{Binding Main, Source={StaticResource Locator}}">
 
     <StackLayout>
@@ -35,7 +34,8 @@
         <Button 
             x:Name="btnComenzar"
             Text="Comenzar" 
-            CornerRadius="10" 
+            BorderWidth="43"
+            CornerRadius="23" 
             BackgroundColor="#00b7cf" 
             Margin="100">
         </Button>

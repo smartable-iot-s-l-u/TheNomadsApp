@@ -65,7 +65,7 @@
                     Grid.Row="0"
                     Grid.Column="1"
                     x:Name="btnparticular"
-                    Text="Particular"
+                    Text="Nómada"
                     TextColor="#3e4241">
                     </Button>
                 </Grid>
@@ -92,7 +92,7 @@
                     FontSize="Micro"
                     Grid.Row="0"
                     Grid.Column="1"
-                    HorizontalOptions="CenterAndExpand" 
+                    HorizontalOptions="FillAndExpand" 
                     Margin="20,2"
                     Text="Cualquier persona que 
                         necesite un espacio"

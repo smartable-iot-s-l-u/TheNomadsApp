@@ -9,21 +9,31 @@
             <StackLayout
                 Padding="10,20,10,5">
 
-                <Label Text="PARA PODER VER TODOS LOS ESPACIOS DISPONIBLES, REGÍSTRATE EN LA APP!"
+                <Label 
+                Text="PARA PODER VER TODOS LOS ESPACIOS DISPONIBLES, REGÍSTRATE EN LA APP!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
                 <Image
                 Source="tienda_campana"
-                    WidthRequest="170">
+                    WidthRequest="155">
                 </Image>
 
                 <Label
                 FontAttributes="Bold"
-                FontSize="Large"
+                FontSize="43"
                 HorizontalOptions="Center" 
                 HorizontalTextAlignment="Start"
-                Text="regístrate como nómada"
+                Text="Crea tu perfil"
+                TextColor="#3e4241">
+                </Label>
+
+                <Label
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HorizontalOptions="Center" 
+                HorizontalTextAlignment="Start"
+                Text="Regístrate de forma sencilla y reserva tu lugar de trabajo/estudio"
                 TextColor="#3e4241">
                 </Label>
 
@@ -50,36 +60,27 @@
                     <Entry
                     
                     Keyboard="Email"
-                    Text="{Binding Name, Mode=TwoWay}"
-                    Placeholder="Tu Nombre"
-                    PlaceholderColor="Gray">
-                    </Entry>
-
-
-                    <Entry
-                    
-                    Keyboard="Email"
                     Text="{Binding Email, Mode=TwoWay}"
-                    Placeholder="Tu email "
+                    Placeholder="Tu email"
                     PlaceholderColor="Gray">
                     </Entry>
 
 
-
                     <Entry
                     
-                    IsPassword="True"
-                    Placeholder="Contraseña"
-                    PlaceholderColor="Gray"
-                    Text="{Binding Password, Mode=TwoWay}">
+                    IsPassword="true"
+                    Text="{Binding Password, Mode=TwoWay}"
+                    Placeholder="Contraseña "
+                    PlaceholderColor="Gray">
                     </Entry>
+
                 </StackLayout>
 
                 <StackLayout
                 Margin="40,0">
                     <Button
                     BackgroundColor="#a4c900"
-                    Command="{Binding RegisterCommand}"
+                    Command="{Binding CrearPerfilCommand}"
                     CornerRadius="23"
                     HeightRequest="46"
                     IsEnabled="{Binding IsEnabled, Mode=TwoWay}"

@@ -21,7 +21,7 @@
         
         private void Btnexplorar_Clicked(object sender, EventArgs e)
         {
-            ((NavigationPage)this.Parent).PushAsync(new LoginNomada2Page());
+            ((NavigationPage)this.Parent).PushAsync(new ReservarEspacioPage());
         }
     }
 }

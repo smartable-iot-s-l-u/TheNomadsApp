@@ -224,4 +224,16 @@
   <ItemGroup>
     <BundleResource Include="Resources\SliderRestaurante4.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SliderParticular1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SliderParticular2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SliderParticular3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SliderParticular4.png" />
+  </ItemGroup>
 </Project>
