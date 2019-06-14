@@ -47,7 +47,17 @@
             set;
         }
 
-        public MostrarMasEspaciosViewModel MostrarMasEspacios { get; set; }
+        public MostrarMasEspaciosViewModel MostrarMasEspacios
+        {
+            get;
+            set;
+        }
+
+        public ListaEspacioViewModel ListaEspacio
+        {
+            get;
+            set;
+        }
 
         #region Constructors
         public MainViewModel()
@@ -61,6 +71,7 @@
             this.ReservarEspacio = new ReservarEspacioViewModel();
             this.CrearCuentaAnfitrion = new CrearCuentaAnfitrionViewModel();
             this.MostrarMasEspacios = new MostrarMasEspaciosViewModel();
+            this.ListaEspacio = new ListaEspacioViewModel();
             
             
         }

@@ -45,6 +45,7 @@
                     HorizontalOptions="StartAndExpand"
                     Orientation="Horizontal">
                     <Label
+                        Margin="20,2"
                         FontSize="20"
                         Text="Espacios cerca de ti"
                         TextColor="#3e4241">
@@ -60,30 +61,30 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
                             <RowDefinition Height="20"/>
-                            <RowDefinition Height="5"/>
-                            <RowDefinition Height="5"/>
-                            <RowDefinition Height="5"/>
-                            <RowDefinition Height="5"/>
                             <RowDefinition Height="20"/>
-                            <RowDefinition Height="5"/>
-                            <RowDefinition Height="5"/>
-                            <RowDefinition Height="5"/>
-                            <RowDefinition Height="5"/>
+                            <RowDefinition Height="20"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="20"/>
+                            <RowDefinition Height="20"/>
+                            <RowDefinition Height="20"/>
                         </Grid.RowDefinitions>
 
                         <Image
                             Grid.Column="0"
                             Grid.Row="0"                           
-                            Source=""
-                            WidthRequest="15">
+                            Source="slider_anfitrion1"
+                            WidthRequest="50">
                         </Image>
                         <Label
                             FontSize="Medium"
                             Grid.Column="0"
                             Grid.Row="1"
                             HorizontalOptions="Start"
-                            Margin="20,2"
+                            Margin="20,1"
                             Text="BAR - ALICANTE"
                             TextColor="#a4c900">
                         </Label>
@@ -91,8 +92,8 @@
                             FontSize="Micro"
                             Grid.Column="0"
                             Grid.Row="2"
-                            HorizontalOptions="Start" 
-                            Margin="20,2"
+                            HorizontalOptions="FillAndExpand" 
+                            Margin="20,1"
                             Text="Mesa reunión para 4 pers."
                             TextColor="#3e4241">
                         </Label>
@@ -101,7 +102,7 @@
                             Grid.Column="0"
                             Grid.Row="3"
                             HorizontalOptions="Start" 
-                            Margin="20,2"
+                            Margin="20,1"
                             Text="Sitio maravilloso"
                             TextColor="#3e4241">
                         </Label>
@@ -119,7 +120,7 @@
                         <Image
                             Grid.Column="1"
                             Grid.Row="0"                           
-                            Source=""
+                            Source="slider_anfitrion2"
                             WidthRequest="15">
                         </Image>
                         <Label
@@ -163,7 +164,7 @@
                         <Image
                             Grid.Column="0"
                             Grid.Row="5"                           
-                            Source=""
+                            Source="slider_anfitrion2"
                             WidthRequest="15">
                         </Image>
                         <Label
@@ -206,7 +207,7 @@
                         <Image
                             Grid.Column="1"
                             Grid.Row="5"                           
-                            Source=""
+                            Source="slider_anfitrion1"
                             WidthRequest="15">
                         </Image>
                         <Label
@@ -258,7 +259,7 @@
                         x:Name="btnMostrarMas"
                         CornerRadius="23"
                         HeightRequest="46"
-                        Margin="40,5"
+                        Margin="35,5"
                         Text="Mostrar más"
                         TextColor="#3e4241">
                         
@@ -267,6 +268,7 @@
                 </StackLayout>
 
                 <StackLayout
+                    Margin="20,10"
                     Orientation="Horizontal">
                     <Label
                         FontSize="20"
@@ -274,13 +276,49 @@
                         Text="EXPERIENCIAS"
                         TextColor="#3e4241">
                     </Label>
-                    <Label
-                        FontSize="18"
+                    <ImageButton
+                        x:Name="btnVerTodas"
                         HorizontalOptions="EndAndExpand"
-                        Text="Ver Todas"
-                        TextColor="#3e4241">
-                    </Label>
+                        Source="vertodas"
+                        >
+                    </ImageButton>
 
+                </StackLayout>
+
+                <StackLayout>
+                    <Grid
+                        Margin="20,2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="15"/>
+                            <RowDefinition Height="15"/>
+                        </Grid.RowDefinitions>
+
+                        <Image
+                            Grid.Column="0"
+                            Grid.Row="0"                           
+                            Source="cocina"
+                            WidthRequest="50">
+                        </Image>
+                        <Image
+                            Grid.Column="1"
+                            Grid.Row="0"                           
+                            Source="tapas"
+                            WidthRequest="50">
+                        </Image>
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout
+                    
+                    HorizontalOptions="Center"
+                    Orientation="Horizontal">
+                    <ImageButton
+                        x:Name="btnComenzar">
+                    </ImageButton>
                 </StackLayout>
                 
             </StackLayout>

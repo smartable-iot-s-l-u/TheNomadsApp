@@ -1,12 +1,113 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="NomadApp.Views.MostrarMasEspaciosPage">
+             x:Class="NomadApp.Views.MostrarMasEspaciosPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="AQUÍ TODOS LOS ESPACIOS DISPONIBLES EN LA APP!"
+        <ScrollView
+            BindingContext="{Binding MostrarMasEspacios}">
+            <StackLayout
+                Padding="10,20,10,5">
+
+                <Label Text="PARA PODER VER TODOS LOS ESPACIOS DISPONIBLES, REGÍSTRATE EN LA APP!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+
+                <Image
+                Source="tienda_campana"
+                    WidthRequest="170">
+                </Image>
+
+                <Label
+                FontAttributes="Bold"
+                FontSize="Large"
+                HorizontalOptions="Center" 
+                HorizontalTextAlignment="Start"
+                Text="regístrate como nómada"
+                TextColor="#3e4241">
+                </Label>
+
+                <StackLayout
+                HorizontalOptions="Center"              
+                Orientation="Horizontal">
+                    <ImageButton    
+                    Margin="45,38"
+                    Source="signingoogle"
+                    WidthRequest="240">
+                    </ImageButton>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label
+                        HorizontalOptions="Center"
+                        Text="----------------------------- o ------------------------------"
+                        TextColor="#3e4241"></Label>
+                </StackLayout>
+
+                <StackLayout
+                Margin="45,20">
+
+                    <Entry
+                    
+                    Keyboard="Email"
+                    Text="{Binding Name, Mode=TwoWay}"
+                    Placeholder="Tu Nombre"
+                    PlaceholderColor="Gray">
+                    </Entry>
+
+
+                    <Entry
+                    
+                    Keyboard="Email"
+                    Text="{Binding Email, Mode=TwoWay}"
+                    Placeholder="Tu email "
+                    PlaceholderColor="Gray">
+                    </Entry>
+
+
+
+                    <Entry
+                    
+                    IsPassword="True"
+                    Placeholder="Contraseña"
+                    PlaceholderColor="Gray"
+                    Text="{Binding Password, Mode=TwoWay}">
+                    </Entry>
+                </StackLayout>
+
+                <StackLayout
+                Margin="40,0">
+                    <Button
+                    BackgroundColor="#a4c900"
+                    Command="{Binding RegisterCommand}"
+                    CornerRadius="23"
+                    HeightRequest="46"
+                    IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                    Text="Regístrate"
+                    TextColor="White">
+                    </Button>
+
+                </StackLayout>
+
+                <StackLayout
+                    Margin="40,0  ">
+                    <Label
+                        HorizontalOptions="Center"
+                        Text="¿Ya tienes cuenta? Inicia sesión"
+                        TextColor="#3e4241"></Label>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label
+                        HorizontalOptions="Center"
+                        Text="Powered by SMARTABLE"
+                        TextColor="#3e4241"></Label>
+                </StackLayout>
+
+            </StackLayout>
+
+
+        </ScrollView>
+
     </ContentPage.Content>
 </ContentPage>

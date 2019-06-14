@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NomadApp.Android", "NomadAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NomadApp.iOS", "NomadApp\NomadApp.iOS\NomadApp.iOS.csproj", "{41440B40-F8B0-42B3-8B0B-EEBBAB91152B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NomadApp", "NomadApp\NomadApp\NomadApp.csproj", "{63CC77B2-EB2D-4919-A744-C5F6B5F3C738}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NomadApp", "NomadApp\NomadApp\NomadApp.csproj", "{63CC77B2-EB2D-4919-A744-C5F6B5F3C738}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

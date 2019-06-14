@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NomadApp.Views.ListaEspacioPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="AQUÍ PODEMOS VER TODOS LOS ESPACIOS DISPONIBLES DE LOS RESTAURANTES - BARES DE LA ZONA"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

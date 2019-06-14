@@ -200,4 +200,28 @@
   <ItemGroup>
     <BundleResource Include="Resources\slider_nomada4.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\reserva_espacio.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cocina.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tapas.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\vertodas.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SliderRestaurante1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SliderRestaurante2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SliderRestaurante3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SliderRestaurante4.png" />
+  </ItemGroup>
 </Project>

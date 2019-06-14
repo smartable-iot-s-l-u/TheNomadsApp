@@ -2,6 +2,7 @@
 {
     using Newtonsoft.Json;
     using NomadApp.Models;
+    using NomadApp.Views;
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
@@ -36,7 +37,7 @@
             {
                 var nodeImageInfo = new ObservableCollection<Anfitrion1aModel>();
 
-                Assembly assembly = typeof(MainPage).GetTypeInfo().Assembly;
+                Assembly assembly = typeof(PrincipalPage).GetTypeInfo().Assembly;
 
                 // var assembly = typeof(HomePageViewModel).GetTypeInfo().Assembly;
                 Stream stream = assembly.GetManifestResourceStream("NomadApp.MetaData.jsconfig1.json");
